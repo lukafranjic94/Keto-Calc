@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>Gender:</p>
+    <label for="radio-male">Male</label>
+    <input type="radio" name="gender" value="male" id="radio-male">
+    <label for="radio-female">Female</label>
+    <input type="radio" name="gender" value="female" id="radio-female">
+    <br>
+    <br>
+    <label for="weight">Weight:</label>
+    <input type="number" id="weight">
+    <br>
+    <label for="height">Height:</label>
+    <input type="number" id="height">
+    <br>
+    <label for="age">Age</label>
+    <input type="number" id="age">
+    <br>
+    <br>
+    <p>Activity:</p>
+    <label for="radio-never">Never</label>
+    <input type="radio" name="activity" id="radio-never" value="1.1" checked>
+    <br>
+    <label for="radio-light">Light</label>
+    <input type="radio" name="activity" id="radio-light" value="1.375">
+    <br>
+    <label for="radio-moderate">Moderate</label>
+    <input type="radio" name="activity" id="radio-moderate" value="1.55">
+    <br>
+    <label for="radio-high">High</label>
+    <input type="radio" name="activity" id="radio-high" value="1.725">
+    <br>
+    <label for="radio-extra-high">Extra high</label>
+    <input type="radio" name="activity" id="radio-extra-high" value="1.9">
+    <br>
+    <br>
+    <p>Goal:</p>
+    <label for="radio-maintain">Maintain Shape</label>
+    <input type="radio" name="goal" id="radio-maintain" value="1" checked>
+    <br>
+    <label for="radio-healthy">Stay Healthy</label>
+    <input type="radio" name="goal" id="radio-healthy" value="0.88">
+    <br>
+    <label for="radio-loss">Weight-Loss</label>
+    <input type="radio" name="goal" id="radio-loss" value="0.8">
+    <br>
+    <br>
+    <button id="calc" type="button">Calculate</button>
+    <br>
+    <br>
+    <br>
+    <div id="results"></div>
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
