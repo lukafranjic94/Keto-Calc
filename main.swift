@@ -45,7 +45,6 @@ func calculateProteinNeeded(weight: Double, bfp: Double) -> Double {
 
 func recalculateMacros() {
 
-  /*
   let defaults = UserDefaults.standard
   let goal = defaults.string(forKey: "GenderGoal")
   let activity = defaults.string(forKey: "GenderActivity")
@@ -54,15 +53,6 @@ func recalculateMacros() {
   let age = defaults.string(forKey: "GenderAge")
   let sex = defaults.string(forKey: "GenderMacros")
   _ = defaults.string(forKey: "userId")
-  */
-
-  //Test values
-  let goal = "Maintain Shape"
-  let activity = "Never"
-  let height = String?("185 cm")
-  let weight = String?("75 Kg")
-  let age = String?("27")
-  let sex = String?("Male")
 
   var bmr: Double = 0
   var heightReplaced: Double = 0.0
@@ -143,5 +133,3 @@ func recalculateMacros() {
   UserDefaults.standard.set(goalTDEE, forKey: "calsTotalMacros")
 
 }
-
-recalculateMacros()
